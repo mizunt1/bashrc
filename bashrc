@@ -75,7 +75,7 @@ esac
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    if exa --long >/dev/null; then
+    if exa >/dev/null; then
        alias ls='exa --header --long --sort=modified'
     fi
     #alias dir='dir --color=auto'
